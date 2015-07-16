@@ -6,7 +6,7 @@
 
   <groupId>ch.qos.logback</groupId>
   <artifactId>logback-parent</artifactId>
-  <version>1.1.2</version>
+  <version>1.1.2-INTERNAL</version>
   <packaging>pom</packaging>
   <name>Logback-Parent</name>
   <description>logback project pom.xml file</description>
@@ -377,19 +377,10 @@
   </build>
 
   <distributionManagement>
-    <site>
-      <id>pixie</id>
-      <url>scp://pixie.qos.ch/var/www/logback.qos.ch/htdocs/</url>
-    </site>
-
     <repository>
-      <id>sonatype-nexus-staging</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-
-      <!--<id>pixie</id>-->
-      <!--<url>scp://pixie.qos.ch/var/mvnrepo/</url>-->
+      <id>squarespace-external-release</id>
+      <url>http://nexus.nyc.squarespace.net:8081/nexus/content/repositories/squarespace-external-release/</url>
     </repository>
-
   </distributionManagement>
 
 
